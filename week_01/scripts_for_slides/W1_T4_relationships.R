@@ -26,7 +26,7 @@ NHANES %>%
 # I picked a linear model (lm) method for fitting the line
 # See what will happen when you change the se argument to TRUE?
 NHANES %>% 
-  filter(Age > 17) %>% 
+  filter(Age > 25) %>% 
   ggplot(aes(x = Height, y = Weight)) +
   geom_point() +
   geom_smooth(method=lm, se=TRUE)
